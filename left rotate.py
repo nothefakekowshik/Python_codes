@@ -1,0 +1,5 @@
+d=int(input("Enter the d value"))
+print("Enter the array value")
+a=list(map(int,input().split()))
+print("After left rotation")
+print(*(a[d%len(a):]+a[:d%len(a)]))

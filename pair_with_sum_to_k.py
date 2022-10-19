@@ -1,0 +1,14 @@
+a=[4,2,2,6,4]
+k=6
+l=0
+r=len(a)-1
+while(l<r):
+    if(a[l]^a[r]==k):
+        print("found")
+        break
+    elif(a[l]+a[r]<k):
+        l+=1
+    else:
+        r-=1
+else:
+    print("no")
